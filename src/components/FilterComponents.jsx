@@ -2,16 +2,17 @@ import { useState } from 'react';
 
 function FilterComponents() {
   const [filterData, setFilterData] = useState('');
+
   console.log(filterData);
   return (
     <>
-      <div className="w-1/2 m-auto">
-        <div className="mt-36">
+      <div className="flex justify-center p-2 border h-screen items-center ">
+        <div className="">
           <select
             name="filter"
             id="filter"
             onChange={(e) => setFilterData(e.target.value)}
-            className="border rounded-md shadow-md"
+            className="border rounded-md shadow-md bg-[#fff] text-bold p-3"
           >
             <option>Filter</option>
             <option value={'Date of Registration'}>Date of Registration</option>
