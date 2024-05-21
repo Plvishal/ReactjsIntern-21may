@@ -1,9 +1,12 @@
 import './App.css';
+import FilterComponents from './components/FilterComponents';
 
 function App() {
   return (
     <>
-      <h1 className="">Hello</h1>
+      <div className="">
+        <FilterComponents />
+      </div>
     </>
   );
 }
